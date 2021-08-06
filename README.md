@@ -12,7 +12,7 @@ composer require abovesky/laravel-yar -vvv
 ```
 3. 配置
 ```bash
-php artisan vendor:publish --tag="laravel-yar"
+php artisan vendor:publish --provider="Abovesky\LaravelYar\ServiceProvider"
 ```
 会复制三个配置文件到 config.php 目录下，分别为
 yar.php：yar 运行时配置
