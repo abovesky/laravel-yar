@@ -1,0 +1,35 @@
+{
+  "name": "abovesky/laravel-yar",
+  "description": "Yar的Laravel封装",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "abovesky",
+      "email": "abovesky@qq.com"
+    },
+    {
+      "name": "Li Jian",
+      "email": "mydr@vip.qq.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Abovesky\\LaravelYar\\": "src/"
+    }
+  },
+  "require": {
+    "php": ">=7.1.0",
+    "laravel/framework": "~5.5|~6.0|~7.0|~8.0"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Abovesky\\LaravelYar\\ServiceProvider"
+      ],
+      "aliases": {
+        "Yar": "Abovesky\\LaravelYar\\Facade"
+      }
+    }
+  }
+}
